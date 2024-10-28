@@ -1,9 +1,80 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="第 1 页" id="tWmtQmRMFnt8Sa2dvdHU">
-    <mxGraphModel>
+    <mxGraphModel dx="1415" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-1" target="bEMPPqINTHEcLDiYPaIL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-1" value="1. 开始事务" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="370" y="190" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-2" target="bEMPPqINTHEcLDiYPaIL-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-2" value="2. 查询数据表中待更新的数据到内存，并加焕" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="250" width="291" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-4" target="bEMPPqINTHEcLDiYPaIL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-4" value="3. 将缓存的数据加载到innodB缓存区（通过innodb_log_buffer设置的缓冲区）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="320" width="291" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-6" target="bEMPPqINTHEcLDiYPaIL-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-6" target="bEMPPqINTHEcLDiYPaIL-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-6" value="4. 记录undo log对应的Redo log到内存缓冲区" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="390" width="291" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-8" target="bEMPPqINTHEcLDiYPaIL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-8" value="5. 记录undo log到内存缓冲区" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="460" width="291" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-10" target="bEMPPqINTHEcLDiYPaIL-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-10" target="bEMPPqINTHEcLDiYPaIL-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-10" value="6. 记录更新数据对应的redo log到内存缓冲区" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="520" width="291" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-12" target="bEMPPqINTHEcLDiYPaIL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-12" value="7. 在内存中更新数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="590" width="291" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-14" target="bEMPPqINTHEcLDiYPaIL-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-14" value="8。 提交事务触发redo log刷盘" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="650" width="291" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-17" target="bEMPPqINTHEcLDiYPaIL-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-17" value="9. undo log和数据页都通过检查点机制刷盘" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="281.5" y="710" width="281" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-19" value="事务结束" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="347.75" y="780" width="148.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bEMPPqINTHEcLDiYPaIL-21" target="bEMPPqINTHEcLDiYPaIL-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bEMPPqINTHEcLDiYPaIL-21" value="Redo log每秒刷盘" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="720" width="170" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
